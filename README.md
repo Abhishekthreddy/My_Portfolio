@@ -77,9 +77,21 @@ Your portfolio will be live in minutes!
 
 ## Customization
 
+### Important: Update Your Personal Information
+
+Before deploying, make sure to update the following placeholder values in `app/page.tsx`:
+
+1. **Email address** (line 232): Replace `contact@example.com` with your actual email
+2. **LinkedIn URL** (line 238): Replace `https://linkedin.com` with your LinkedIn profile URL
+3. **GitHub URL** (line 245): Replace `https://github.com` with your GitHub profile URL
+
+Look for `TODO` comments in the code for these locations.
+
+### Customize Content
+
 Edit the following files to personalize your portfolio:
 
-- `app/page.tsx` - Update content, projects, certifications, and skills
+- `app/page.tsx` - Update content, projects, certifications, skills, and contact information
 - `app/layout.tsx` - Modify site metadata and title
 - `app/globals.css` - Customize colors and styles
 
