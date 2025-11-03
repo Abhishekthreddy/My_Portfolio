@@ -33,7 +33,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Abhishek T</span>
+            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Abhishek T</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 mb-8">
             AI Engineer | Machine Learning Specialist
@@ -58,7 +58,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-8 text-center">About Me</h2>
           <div className="text-lg text-slate-600 dark:text-slate-300 space-y-4">
             <p>
-              I'm an AI Engineer passionate about building intelligent systems that solve real-world problems. 
+              I&apos;m an AI Engineer passionate about building intelligent systems that solve real-world problems. 
               With expertise in Natural Language Processing, Retrieval-Augmented Generation, and MLOps, 
               I specialize in creating scalable AI solutions deployed on cloud platforms.
             </p>
@@ -68,8 +68,8 @@ export default function Home() {
               Azure cloud platforms, implementing end-to-end ML pipelines, and optimizing models for production.
             </p>
             <p>
-              I'm always eager to learn new technologies and collaborate on challenging projects that push 
-              the boundaries of what's possible with AI.
+              I&apos;m always eager to learn new technologies and collaborate on challenging projects that push 
+              the boundaries of what&apos;s possible with AI.
             </p>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-8">Get In Touch</h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-12">
-            I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow AI enthusiasts.
+            I&apos;m always interested in hearing about new opportunities, collaborations, or just connecting with fellow AI enthusiasts.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="mailto:contact@example.com" className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
