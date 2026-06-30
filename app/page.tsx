@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 const CONTACT = {
   name: "Abhishekth Reddy Thanam",
-  tagline: "AI/ML Engineer • Agentic RAG & LLMs • MLOps",
+  tagline: "AI/ML Engineer • Agentic RAG & LLMs • MLOps • Finance & Healthcare",
   linkedin: "https://www.linkedin.com/in/abhishekthreddy/",
   github: "https://github.com/Abhishekthreddy",
   email: "balathanam2002@gmail.com",
