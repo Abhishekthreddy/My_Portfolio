@@ -21,6 +21,13 @@ A modern, responsive personal portfolio built with **Next.js 16**, **React 19**,
 
 ## Getting Started
 
+> This is a **Node.js / Next.js** project. Dependencies are declared in
+> [`package.json`](package.json) and installed with **npm** — there is no pip step.
+> A [`requirements.txt`](requirements.txt) is included only as a human-readable
+> list of the packages; the actual install command is `npm install`.
+>
+> **Prerequisite:** [Node.js](https://nodejs.org) 18.18+ (Node 20 or 22 LTS recommended), which includes npm.
+
 ```bash
 npm install
 npm run dev
