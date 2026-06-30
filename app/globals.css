@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #5a6072;
+  --heading: #222838;
+  --indigo: #2b32b2;
+  --blue: #1488cc;
+  --accent: #1677ff;
+  --card: #ffffff;
+  --card-border: #e6e9f2;
+  --chip-bg: #f4f6fc;
+  --muted: #8b91a4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-heading: var(--heading);
+  --font-sans: var(--font-nunito), "Nunito Sans", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-nunito), "Nunito Sans", system-ui, -apple-system, sans-serif;
+  margin: 0;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Brand gradients ---------- */
+.bg-hero-gradient { background: linear-gradient(120deg, #2b32b2 0%, #1488cc 100%); }
+.bg-brand-gradient { background: linear-gradient(135deg, #2b32b2 0%, #1488cc 100%); }
+.text-gradient {
+  background: linear-gradient(120deg, #2b32b2, #1488cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Section heading underline ---------- */
+.section-underline {
+  width: 64px; height: 4px; border-radius: 999px;
+  background: linear-gradient(90deg, #2b32b2, #1488cc);
+  margin: 16px auto 0;
+}
+
+/* ---------- Animations ---------- */
+@keyframes bounce-soft { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
+.animate-bounce-soft { animation: bounce-soft 2s ease-in-out infinite; }
+
+@keyframes fade-up { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+.fade-up { animation: fade-up 0.7s ease both; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--card); border: 1px solid var(--card-border); border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(20,30,80,0.05);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(20,30,80,0.12); }
+
+.accent-card {
+  position: relative; background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 14px; box-shadow: 0 6px 24px rgba(20,30,80,0.05);
+  transition: transform .25s ease, box-shadow .25s ease; overflow: hidden;
+}
+.accent-card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: linear-gradient(180deg, #2b32b2, #1488cc);
+}
+.accent-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(20,30,80,0.12); }
+
+/* ---------- Tech chips ---------- */
+.chip {
+  display: inline-flex; align-items: center; padding: 5px 11px; border-radius: 999px;
+  background: var(--chip-bg); border: 1px solid var(--card-border);
+  color: var(--blue); font-size: 12px; font-weight: 700; line-height: 1.4;
+}
+
+/* ---------- Status pill ---------- */
+.status-pill {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 999px;
+  background: var(--chip-bg); border: 1px solid var(--card-border);
+  color: var(--blue); font-weight: 700; font-size: 14px;
+}
+
+/* ---------- Hero social buttons ---------- */
+.hero-social {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.85); color: #fff;
+  background: rgba(255,255,255,0.04);
+  transition: background .25s ease, transform .25s ease;
+}
+.hero-social:hover { background: rgba(255,255,255,0.18); transform: translateY(-3px); }
+
+/* ---------- Outlined github button ---------- */
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 10px;
+  border: 1.5px solid var(--blue); color: var(--blue); font-weight: 700; font-size: 14px;
+  transition: background .25s ease, color .25s ease;
+}
+.btn-outline:hover { background: var(--blue); color: #fff; }
+
+/* ---------- Bullet markers ---------- */
+.exp-bullet { position: relative; padding-left: 22px; margin-bottom: 12px; }
+.exp-bullet::before {
+  content: ""; position: absolute; left: 0; top: 9px; width: 8px; height: 8px;
+  transform: rotate(45deg); background: linear-gradient(135deg, #2b32b2, #1488cc); border-radius: 2px;
+}
