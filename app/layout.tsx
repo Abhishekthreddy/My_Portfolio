@@ -10,9 +10,9 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Abhishekth Reddy Thanam — AI/ML Engineer",
+  title: "Abhishekth Reddy Thanam — AI Engineer",
   description:
-    "Abhishekth Reddy Thanam — AI/ML Engineer specializing in LLMs, agentic RAG systems, multi-agent orchestration with LangGraph, LLM fine-tuning with LoRA/PEFT, and MLOps across finance and healthcare.",
+    "Abhishekth Reddy Thanam — AI Engineer specializing in agentic AI, multi-agent workflows with LangGraph and MCP, RAG, LLM evaluation and guardrails, building HIPAA-compliant AI systems in healthcare.",
   authors: [{ name: "Abhishekth Reddy Thanam" }],
 };
 
