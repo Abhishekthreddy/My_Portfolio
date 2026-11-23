@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 const CONTACT = {
   name: "Abhishekth Reddy Thanam",
-  tagline: "AI/ML Engineer • Agentic RAG & LLMs • MLOps • Finance & Healthcare",
+  tagline: "AI Engineer • Agentic AI • LLM Evaluation & Guardrails • Healthcare",
   linkedin: "https://www.linkedin.com/in/abhishekthreddy/",
   github: "https://github.com/Abhishekthreddy",
   email: "balathanam2002@gmail.com",
@@ -22,56 +22,66 @@ const NAV = [
 ];
 
 const ABOUT =
-  "I'm an **AI/ML Engineer** with 3+ years delivering production-grade machine learning and agentic AI systems across healthcare and financial services. I specialize in **multi-agent orchestration with LangGraph**, RAG pipeline architecture, and domain-specific **LLM fine-tuning with LoRA/PEFT** — deployed at enterprise scale on cloud infrastructure. Recently I cut clinical prior-authorization turnaround from **3 days to under 4 hours** at UnitedHealth Group, and earlier built AML classification and real-time fraud detection systems at State Street.";
+  "I'm an **AI Engineer** with 4+ years building production AI systems in healthcare. I specialize in **agentic AI and multi-agent workflows** with LangGraph, **MCP tool calling** and RAG on AWS (Bedrock, SageMaker, EKS, OpenSearch) and GCP (Vertex AI). At UnitedHealth Group I build **HIPAA-compliant agent platforms** for prior authorization and clinical workflows, backed by **LLM evaluation** (LangSmith, DeepEval, LLM-as-a-judge) and **layered guardrails** (Bedrock Guardrails, NeMo Guardrails, PHI redaction, human-in-the-loop review). My background spans ML engineering, clinical NLP, LLM fine-tuning (QLoRA) and MLOps (MLflow, Airflow, CI/CD).";
 
 const SKILLS = [
   {
-    title: "Languages & Data",
-    icons: ["python", "postgresql", "apachespark", "pandas"],
-    desc: "Python, SQL, and PySpark for data processing, feature pipelines, and analysis at scale.",
+    title: "Agentic AI & LLMs",
+    icons: ["langchain", "huggingface", "meta", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"],
+    desc: "LangGraph, LangChain, multi-agent orchestration, MCP tool calling, RAG, hybrid search with reranking, and QLoRA/PEFT fine-tuning on Bedrock, OpenAI and Llama 3.1.",
   },
   {
-    title: "ML & Deep Learning",
-    icons: ["pytorch", "scikitlearn", "huggingface"],
-    desc: "PyTorch, scikit-learn, XGBoost, and BERT for modeling, prediction, and NLP.",
+    title: "LLM Evaluation & Guardrails",
+    icons: ["langchain", "nvidia", "python"],
+    desc: "LangSmith, DeepEval, RAGAS and LLM-as-a-judge on golden datasets, plus Bedrock and NeMo Guardrails, PHI/PII redaction, prompt-injection defense and human-in-the-loop review.",
   },
   {
-    title: "Cloud & MLOps",
-    icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", "docker", "kubernetes", "mlflow"],
-    desc: "AWS, Docker, Kubernetes, MLflow, and CI/CD for deploying and monitoring models.",
+    title: "ML & Clinical NLP",
+    icons: ["pytorch", "tensorflow", "scikitlearn", "spacy"],
+    desc: "PyTorch, TensorFlow, scikit-learn, XGBoost, LightGBM, BioBERT and scispaCy for prediction, clinical NER and SHAP explainability.",
   },
   {
-    title: "Data & Streaming",
-    icons: ["apachekafka", "apacheflink", "snowflake", "redis"],
-    desc: "Kafka, Flink, Snowflake, Redis, and Feast for event-driven, real-time data systems.",
+    title: "Cloud, MLOps & Data",
+    icons: ["googlecloud", "docker", "kubernetes", "mlflow"],
+    desc: "AWS, GCP Vertex AI, Docker, EKS, MLflow, Airflow, FastAPI and CI/CD, with PostgreSQL (pgvector), BigQuery, OpenSearch, Kafka, Flink and FHIR/HL7 pipelines.",
   },
 ];
 
 const EXPERIENCE = [
   {
-    role: "AI Engineer",
+    role: "Artificial Intelligence Engineer",
     company: "UnitedHealth Group",
-    date: "Jan 2025 — Present",
+    date: "Jun 2025 — Present",
     location: "USA",
     points: [
-      "Designed a multi-agent prior-authorization architecture using LangGraph on AWS Bedrock (Claude 3.5 Sonnet), orchestrating planner, retriever, and reviewer agents to cut authorization turnaround from **3 days to under 4 hours** across **2M+** annual requests.",
-      "Built a production RAG pipeline over **50K+** clinical policy documents with document chunking, hybrid search, and reranking via Pinecone and Amazon Titan Embeddings V2, reaching **94%** retrieval accuracy for CMS-0057-aligned coverage decisions.",
-      "Built LangGraph agent nodes for parallel eligibility verification, EHR extraction, and policy-compliance checks, cutting manual clinical review workload **40%** across payer and provider workflows.",
-      "Implemented LLMOps observability with RAGAS and CloudWatch to monitor retrieval precision, faithfulness, and hallucination, lifting pipeline accuracy from **78% to 91%** while reducing inference cost **35%**.",
-      "Deployed containerized AI microservices on AWS ECS via Docker and GitHub Actions CI/CD, holding **99.9%** uptime and cutting inference latency **35%** with async batching and caching.",
+      "Architected and deployed a **multi-agent prior-authorization system** using LangGraph and MCP tool calling on AWS (Bedrock, Lambda, EKS), orchestrating intake, clinical-evidence and determination agents to cut authorization turnaround from **days to hours**.",
+      "Built an **LLM evaluation framework** using LangSmith, DeepEval and LLM-as-a-judge against clinician-labeled golden datasets, tracking accuracy, policy faithfulness and hallucination rate as automated CI/CD release gates.",
+      "Implemented **HIPAA-compliant guardrails** using Bedrock Guardrails and NeMo Guardrails for PHI redaction, prompt-injection defense and schema-validated outputs, with clinician-in-the-loop review for every adverse determination.",
+      "Developed a **secure MCP tool gateway** with typed contracts, OAuth-based access control, rate limiting and audit logging, giving agents least-privilege access to claims, eligibility and FHIR-based EHR systems.",
+      "Designed a hybrid retrieval pipeline over **50K+** payer policy and clinical guideline documents using Amazon OpenSearch vector search, Bedrock Titan embeddings, BM25 and cross-encoder reranking, improving retrieval precision by **~30%** with source-cited answers.",
     ],
   },
   {
-    role: "ML Engineer",
-    company: "State Street",
-    date: "Jun 2021 — Jul 2023",
+    role: "Graduate Research Analyst",
+    company: "Robert Morris University",
+    date: "Jan 2024 — May 2025",
+    location: "USA",
+    points: [
+      "Built a **RAG-based academic advising assistant** (LangChain, OpenAI, ChromaDB) over RMU's student handbook, course catalog and policies, giving students instant source-cited answers on prerequisites, deadlines and degree requirements.",
+      "Engineered hybrid retrieval (BM25 + vector search) with recursive chunking and OpenAI embeddings, validated with RAGAS on **200+** test questions, improving answer accuracy by **25%** over a baseline LLM.",
+      "Analyzed student engagement and enrollment data with Python, SQL and Tableau to find frequent advising questions and course-demand trends, and presented findings to faculty and administrators to support advising and scheduling decisions.",
+    ],
+  },
+  {
+    role: "Machine Learning Engineer",
+    company: "Citius Health",
+    date: "Jan 2022 — Jun 2023",
     location: "India",
     points: [
-      "Developed and deployed an XGBoost AML classification model on GCP Vertex AI within the transaction-monitoring pipeline, reducing false-positive alerts **38%** and improving true-positive detection **25%**.",
-      "Contributed a regression-based NAV prediction model in BigQuery ML for **500+** institutional funds, achieving **0.03%** mean absolute error and supporting a **40%** cut in manual valuation reviews.",
-      "Applied BERT-based NLP to broker confirmations and loan-agent notices, automating document digitization at **92%** extraction accuracy across **10K+** daily trade documents.",
-      "Built feature and ETL pipelines with Python and Apache Spark on Azure, consolidating **20+** custodian feeds into Snowflake and reducing ingestion latency from **6 hours to 45 minutes**.",
-      "Automated data reconciliation with SQL and Azure Data Factory, reducing manual reconciliation effort **70%** and supporting Basel III and FATF regulatory traceability.",
+      "Developed **30-day readmission and high-risk patient prediction models** with XGBoost and scikit-learn on **500K+** EHR and claims records in BigQuery for a US payer client, reaching **ROC-AUC of 0.82** with SHAP explainability for clinical review.",
+      "Built a **clinical NLP pipeline** using BioBERT and scispaCy to extract diagnoses, medications and procedures from clinical notes into FHIR resources via Google Cloud Healthcare API, improving coding accuracy by **20%**.",
+      "Deployed models on Vertex AI with Vertex Pipelines, Cloud Composer (Airflow), Docker and Cloud Build CI/CD, adding model monitoring, drift detection and scheduled retraining for HIPAA-compliant production releases.",
+      "Prototyped a LangChain and GPT-3.5 question-answering assistant over payer policy and clinical guideline documents on Cloud Run, showing grounded, source-cited answers that shaped the client's GenAI roadmap.",
     ],
   },
 ];
@@ -79,15 +89,15 @@ const EXPERIENCE = [
 const PROJECTS = [
   {
     title: "Clinical Documentation LLM Fine-Tuning",
-    desc: "Fine-tuned Llama 3.1-8B on 50,000+ clinical notes using QLoRA (4-bit) and Hugging Face PEFT on PyTorch, with guardrails and red-teaming prompts that cut hallucination 34% and improved entity-extraction accuracy 28% on held-out benchmarks. Tracked 12 fine-tuning iterations in MLflow and shipped the quantized model as a HIPAA-compliant FastAPI endpoint — 3× faster inference while keeping 96% of full-precision accuracy.",
-    tags: ["PyTorch", "QLoRA", "Hugging Face PEFT", "Llama 3.1", "MLflow", "FastAPI"],
+    desc: "Fine-tuned Llama 3.1-8B with QLoRA/PEFT (PyTorch), cutting hallucinations by 34% and raising clinical entity-extraction accuracy by 28%. Tracked 12 iterations in MLflow and deployed a quantized FastAPI endpoint with 3× faster inference at 96% of full-precision accuracy.",
+    tags: ["PyTorch", "QLoRA", "PEFT", "Llama 3.1", "MLflow", "FastAPI"],
     link: "https://github.com/Abhishekthreddy",
   },
   {
     title: "Real-Time Fraud Detection Pipeline",
-    desc: "An event-driven architecture on Apache Kafka and Flink ingesting 100K+ transactions per second, feeding live-engineered features into a fraud model at a 94.2% true-positive rate with sub-100ms end-to-end latency. Real-time signals are served through a Feast feature store on Redis for microsecond lookups, with the scoring service deployed as a FastAPI REST API and SHAP explainability for regulatory audit compliance.",
-    tags: ["Apache Kafka", "Apache Flink", "Feast", "Redis", "SHAP", "Grafana", "FastAPI"],
-    link: "https://github.com/Abhishekthreddy",
+    desc: "A Kafka–Flink streaming pipeline with real-time feature engineering and Redis-backed Feast feature serving, plus low-latency FastAPI fraud scoring with SHAP explainability and Grafana monitoring.",
+    tags: ["Apache Kafka", "Apache Flink", "Feast", "Redis", "FastAPI", "SHAP", "Grafana"],
+    link: "https://github.com/Abhishekthreddy/Real-Time-Fraud-Detection",
   },
 ];
 
@@ -344,7 +354,7 @@ export default function Home() {
           <div className="mt-9 flex justify-center">
             <span className="status-pill">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500" />
-              Open to AI/ML roles · USA — open to relocate
+              Open to AI Engineer roles · USA — open to relocate
             </span>
           </div>
         </div>
@@ -378,7 +388,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <SectionHeading
             title="Experience"
-            subtitle="Agentic AI and ML systems across healthcare and financial services."
+            subtitle="Agentic AI, LLM and ML systems in healthcare."
           />
           <div className="space-y-7">
             {EXPERIENCE.map((e) => (
@@ -463,7 +473,7 @@ export default function Home() {
           </a>
         </div>
         <p className="mt-5 text-sm text-white/90">
-          © 2026 {CONTACT.name} — AI/ML Engineer
+          © 2026 {CONTACT.name} — AI Engineer
         </p>
       </footer>
     </main>
